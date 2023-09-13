@@ -22,5 +22,5 @@ Esta página está diseñada para que puedas explorar y aprender sobre estos imp
 
 *Gracias por visitar mi página dedicada a los gatos monteses. ¡Espero que encuentres esta experiencia educativa y apasionante! Siéntete libre de explorar, aprender y compartir con otros amantes de los gatos.*
 
-**¡Disfruta tu visita! 🐱🌲**
+### ¡Disfruta tu visita! 🐱🌲
 ![image](https://github.com/samantha09s/Gatos-Monteses/assets/140031528/92afc99a-867a-4eae-9574-e3de37fa6ccb)
