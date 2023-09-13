@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Samantha Munguía Alfaro" />
+    <meta name="description" content="Samantha Munguía - Web Designer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Samantha Munguía Alfaro | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Iconos de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link href="estilos.css" rel="stylesheet" />
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Belanosima&family=Montserrat&family=Pacifico&family=Rubik:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="imagenes/icon.png"
+            alt="Logo de la página web: Garras"
+            alt="Logo"
+            width="40"
+            height="32"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNavAltMarkup"
+          style="font-weight: 550"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#sobre-ellos"
+              >SOBRE</a
+            >
+            <a class="nav-link" href="#caracteristicas">CARACTERISTICAS</a>
+            <a class="nav-link" href="#protegelos">PROTEGELOS</a>
+            <a class="nav-link" href="#galeria">GALERIA</a>
+            <a class="nav-link" href="#datos">CONTACTO</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <button onclick="mostrarMensajeBienvenida()" style="padding-top: 70px">
+      ¡Bienvenido a Mundo Montés Felino!
+    </button>
+
+    <section id="sobre-ellos" class="hero align-items-stretch">
+      <div
+        class="container-fluid"
+        style="padding-top: 80px; padding-bottom: 30px"
+      >
+        <img
+          class="hero-imagen-desarrollador rounded-circle"
+          src="imagenes/gato montes.avif"
+          alt="Imagen de un Gato Montés"
+        />
+        <h1>Explora el Mundo de los Gatos Montés</h1>
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+    </section>
+
+    <button onclick="cambiarColorFondo()">
+      ¡Interactúa con la Página Web!
+    </button>
+
+    <section id="características" class="caracteristicas-seccion">
+      <div class="container-fluid">
+        <h2 class="seccion-titulo">El Felino Salvaje</h2>
+        <p class="seccion-texto">
+          El gato montés, también conocido como felis silvestris, es un felino
+          salvaje, como bien indica su nombre, muy similar al gato común, aunque
+          físicamente posee unas dimensiones algo mayores. Se trata de un
+          mamífero de origen mediterráneo que, en la actualidad, puede
+          encontrarse en los bosques de Europa, América, Asia y algunos montes
+          africanos.
+        </p>
+        <br />
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            Los gatos monteses se encuentran en una variedad de hábitats, desde
+            selvas tropicales hasta desiertos y montañas.
+          </li>
+          <li class="list-group-item">
+            Son excepcionales trepadores y saltadores, capaces de subir a
+            árboles y rocas con facilidad.
+          </li>
+          <li class="list-group-item">
+            A diferencia de otros felinos, los gatos monteses no dependen tanto
+            de su sentido del olfato para la caza.
+          </li>
+          <li class="list-group-item">
+            Pueden ocupar territorios de hasta 500 kilómetros cuadrados para
+            encontrar suficiente alimento.
+          </li>
+          <li class="list-group-item">
+            Los gatos monteses son principalmente solitarios, excepto durante la
+            época de reproducción y el cuidado de las crías.
+          </li>
+        </ul>
+        <h2 class="paises" style="padding-top: 20px">
+          Países con Gatos Monteses
+        </h2>
+        <ol id="countryList">
+          <li>
+            <button class="btn btn-up" onclick="moveUp(0)">Subir</button>
+            <button class="btn btn-down" onclick="moveDown(0)">Bajar</button>
+            <span>Estados Unidos</span>
+          </li>
+          <li>
+            <button class="btn btn-up" onclick="moveUp(1)">Subir</button>
+            <button class="btn btn-down" onclick="moveDown(1)">Bajar</button>
+            <span>Canadá</span>
+          </li>
+          <li>
+            <button class="btn btn-up" onclick="moveUp(2)">Subir</button>
+            <button class="btn btn-down" onclick="moveDown(2)">Bajar</button>
+            <span>México</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="caracteristicas" class="seccion">
+      <div class="container text-center">
+        <div class="row" style="padding-top: 30px">
+          <!-- Datos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-tree"></i>
+            <p class="datos-titulo">Comportamiento solitario</p>
+            <p>
+              Los gatos monteses suelen ser solitarios, excepto durante la
+              temporada de reproducción. Cada individuo tiene su propio
+              territorio, que marca con señales olfativas y visuales para evitar
+              encuentros con otros gatos monteses. Aunque son solitarios, los
+              gatos monteses aún necesitan comunicarse con otros de su especie.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge">Salvajes</span>
+              <span class="badge">Nocturnos</span>
+              <span class="badge">Territoriales</span>
+            </div>
+          </div>
+          <!-- Información -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-tree-fill"></i>
+            <p class="datos-titulo">¿Qué come este felino salvaje?</p>
+            <p>
+              Así como otros felinos, el gato montés es un cazador crepuscular.
+              Sus principales presas son roedores, conejos y huevos. Aunque es
+              menos frecuente, se ha documentado que algunas subespecies llegan
+              a desarrollar tendencias carroñeras, estos gatos ocasionalmente
+              ingieren plantas.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge">Depredadores</span>
+              <span class="badge">Cazadores</span>
+              <span class="badge">Silvestres</span>
+            </div>
+          </div>
+
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-tree"></i>
+            <p class="datos-titulo">¿Cómo es su reproducción?</p>
+            <p>
+              La temporada de reproducción varía según la ubicación y la
+              subespecie, pero generalmente ocurre durante ciertas épocas del
+              año. Los cachorros viven con la madre hasta el año de edad, luego
+              son expulsados y deben establecer su propio territorio, a veces
+              enfrentando desafíos al desplazar a machos adultos.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge">Adaptables</span>
+              <span class="badge">Camuflaje</span>
+              <span class="badge">Cautelosos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Protegelos -->
+    <section id="protegelos" class="bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="mb-4">
+              El principal enemigo del gato montés: El ser humano
+            </h2>
+            <p>
+              El comportamiento humano ha afectado la presencia del gato montés
+              en su hábitat. Es esencial tomar acciones para preservar su estado
+              silvestre.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Hacer conciencia de la situación</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  No todo está perdido...
+                </h6>
+                <p class="card-text">
+                  Conocido como "puma" o "león de montaña", el gato montés
+                  enfrenta su mayor amenaza en la actividad humana. A pesar de
+                  su adaptabilidad, la expansión urbana, la caza ilegal y la
+                  fragmentación del hábitat amenazan su supervivencia. El
+                  conflicto por recursos, la demanda de partes del cuerpo en el
+                  mercado negro y la pérdida de presas naturales son desafíos
+                  críticos. La educación, la coexistencia pacífica y la creación
+                  de reservas son claves para revertir esta tendencia. La
+                  preservación del gato montés no solo protege su especie, sino
+                  también resalta nuestra responsabilidad en la conservación de
+                  la biodiversidad terrestre y la interconexión de la vida en la
+                  Tierra.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="container-md">
+        <h2>¿Quieres descubrir más sobre el gato montés?</h2>
+        <div class="video-container">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/GUDJpUsLdxs?si=Rz27UzQQH_wpA04i"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+
+    <!-- Galería -->
+    <section id="galeria" class="imágenes-seccion-clara">
+      <div class="container-md" style="padding-top: 40px">
+        <h2 class="seccion-titulo">Galería</h2>
+        <h3 class="seccion-descripcion">
+          Es un felino de pequeño tamaño, y el<br />
+          antecesor salvaje de los gatos domésticos.
+        </h3>
+      </div>
+      <!-- Carrusel -->
+      <div
+        id="imagenes"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-sm">
+              <img
+                class="gatomontes-imagen rounded-circle"
+                src="imagenes/gatomontes1.jpg"
+                alt="Foto de un Gato Montés"
+              />
+              <p class="img-texto">
+                Algunas subespecies de gatos monteses están en peligro debido a
+                la pérdida de hábitat, la caza ilegal y otros factores.
+              </p>
+              <div class="img-info">
+                <p class="tema">Estado de conservación</p>
+                <p class="especie">Gato Montés (Felis silvestris gordoni)</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-sm">
+              <img
+                class="gatomontes-imagen rounded-circle"
+                src="imagenes/gatomontes2.jpg"
+                alt="Foto de un Gato Montés"
+              />
+              <p class="img-texto">
+                Los gatos monteses desempeñan un papel importante en los
+                ecosistemas en los que habitan al mantienen un equilibrio en la
+                cadena alimentaria.
+              </p>
+              <div class="img-info">
+                <p class="tema">Importancia ecológica</p>
+                <p class="especie">Gato Montés (Felis silvestris)</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-sm">
+              <img
+                class="gatomontes-imagen rounded-circle"
+                src="imagenes/gatomontes3.jpg"
+                alt="Foto de un grupo de Gatos Monteses"
+              />
+              <p class="img-texto">
+                Los felinos domésticos, estudios consideran que las principales
+                causas de muerte de esta especie son los atropellos y la caza
+                furtiva.
+              </p>
+              <div class="img-info">
+                <p class="tema">Una extinción silenciosa</p>
+                <p class="especie">
+                  Gato Montés Europeo (Felis silvestris silvestris)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#imagenes"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#imagenes"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Pie de pagina (Footer) -->
+    <footer
+      id="datos"
+      class="seccion-oscura d-flex flex-column align-items-center justify-content-center"
+    >
+      <img
+        class="footer-logo"
+        src="imagenes/gato-icon.png"
+        alt="Icon de Gato"
+      />
+      <p class="footer-texto text-center">
+        Ecosistemas en equilibrio, gracias a ellos.<br />
+        Tengamos una armonía en su diversidad.
+      </p>
+
+      <div
+        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <a
+          href="https://github.com/samantha09s"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/samanthamunguia/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/selfwer/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a
+          href="mailto:mikasam09@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+
+      <div class="derechos-de-autor">
+        Creado por Samantha Munguía Alfaro (2023) &#169;
+      </div>
+    </footer>
+  </body>
+</html>

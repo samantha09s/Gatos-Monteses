@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: black;
+}
+button {
+  background-color: #1a3315;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 17.5px;
+  transition: background-color 0.3s;
+  font-family: "Arimo", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+button:hover {
+  background-color: #527640;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Botones de "Subir" */
+.btn-up {
+  background-color: #527640;
+}
+
+/* Botones de "Bajar" */
+.btn-down {
+  background-color: #527640;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 20px 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.seccion-descripcion {
+  font-size: 1rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.1rem;
+}
+
+/* Sección Hero */
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-imagen-desarrollador,
+.gatomontes-imagen {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+/* Características */
+.caracteristicas-seccion {
+  background-color: #212510;
+  color: #f5f6f7;
+  padding: 40px 0;
+}
+
+.características-seccion .contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.características-seccion h2 {
+  font-size: 4rem;
+}
+
+.características-seccion p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Sección Informativa: Datos */
+.seccion {
+  padding: 40px 40px 60px 40px;
+}
+
+.seccion .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.seccion .columna:hover {
+  color: white;
+  background-color: #527640;
+}
+
+.seccion i {
+  font-size: 2.5rem;
+  color: #ffffff;
+  background-color: #1a3315;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.datos-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+  background-color: #1a3315;
+}
+
+/* Protegelos seccion */
+.protegelos {
+  padding: 20px;
+  text-align: center;
+}
+
+.protegelos .seccion-titulo {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.protegelos .seccion-descripcion {
+  font-size: 0.8rem;
+  color: #333;
+  text-align: center;
+}
+
+.content {
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.video-container {
+  max-width: 65%;
+  overflow: hidden;
+}
+
+.video-container .embed-responsive {
+  position: relative;
+  padding-bottom: 50%; /* Proporción 4:3 */
+  height: 0;
+}
+
+.video-container .embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Galería */
+.imágenes-seccion-clara {
+  background-color: #f5f6f7;
+  padding: 40px 0;
+  color: #212510;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-family: "Belanosima", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.imágenes-seccion-clara .container-md {
+  padding-top: 10px;
+}
+
+.imágenes-seccion-clara h2 {
+  font-size: 2.5rem;
+}
+
+.imágenes-seccion-clara h3 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Carrusel */
+.imagenes {
+  padding: 40px 40px 80px 40px;
+}
+
+.imagenes .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container-sm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gatomontes-imagen {
+  height: 350px;
+  width: 350px;
+  margin: 10px 10px 20px 10px;
+}
+
+.img-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.img-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.img-info p {
+  margin-bottom: 0;
+}
+
+.img-info .tema {
+  font-size: 1.2rem;
+}
+
+.img-info .especie {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+footer.seccion-oscura {
+  background-color: #527640;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.footer-logo {
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+}
+
+.footer-texto {
+  font-size: 1.2rem;
+  padding: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #1a3315;
+  border-color: #1a3315;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: white;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #e6e3e3;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+}
+button {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1024px) {
+
+}
