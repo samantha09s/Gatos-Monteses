@@ -23,4 +23,5 @@ Esta página está diseñada para que puedas explorar y aprender sobre estos imp
 *Gracias por visitar mi página dedicada a los gatos monteses. ¡Espero que encuentres esta experiencia educativa y apasionante! Siéntete libre de explorar, aprender y compartir con otros amantes de los gatos.*
 
 **¡Disfruta tu visita! 🐱🌲**
-![imágenes](https://github.com/samantha09s/GatosMonteses/assets/140031528/24a04c59-fbf8-476f-8adf-6b2c2efaeb3d) ![imágenes](https://github.com/samantha09s/GatosMonteses/assets/140031528/901369ce-5211-41bc-86ae-f0918ab55346) ![imágenes](https://github.com/samantha09s/GatosMonteses/assets/140031528/e6ac3cbe-aceb-4a9b-a1e7-93e8bf6ba266)
+![imágenes](![image](https://github.com/samantha09s/Gatos-Monteses/assets/140031528/8d89b83c-e4cf-4e58-b77d-3657c4986f6a)
+)
